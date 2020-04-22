@@ -1,0 +1,34 @@
+body {
+    background-image: url(https://elements-video-cover-images-0.imgix.net/files/241402277/primag.jpg?auto=compress&crop=edges&fit=crop&fm=jpeg&h=800&w=1200&s=b5d1e337d96904481a8de1975a335542);
+} /* Background */
+
+table {
+    border: 1px solid;
+    font-size: larger;
+} /* Bordas da matriz */
+
+.list-group {
+    font-weight: bolder;
+} /* Fonte das legendas */
+
+/* Cores dos ícones */
+.fa-head-side-cough {
+    color: red;
+}
+
+.fa-head-side-mask {
+    color: blue;
+}
+
+.fa-user {
+    color: green;
+}
+
+.home {
+    border: 1px solid;
+} /* Pessoas em casa */
+
+td {
+    min-width: 50px;
+    min-height: 50px;
+} /* Padrão de tamanho das células */

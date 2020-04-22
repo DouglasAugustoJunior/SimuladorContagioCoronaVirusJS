@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simulador Corona Virus</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron mt-4">
+
+                <h4 class="display-8">Preencha os campos para começar:</h4>
+
+                <form id="FormGerar" class="form-row was-validated">
+
+                    <div class="form-group col-2"><!-- Matriz -->
+
+                        <label for="linhas">Matriz</label>
+                        <input id="linhas"  name="linhas" type="number" min="5" value="5" placeholder="Digite a quantidade de linhas" autofocus class="form-control" required>
+
+                    </div>
+
+                    <div class="form-group col-2"><!-- Ciclos -->
+
+                        <label for="ciclos">Ciclos</label>
+                        <input id="ciclos"  name="ciclos" type="number" min="10" value="10" placeholder="Digite a quantidade de ciclos" autofocus class="form-control" required>
+
+                    </div>
+
+                    <div class="form-group col-2"><!-- População -->
+
+                        <label for="populacao">População</label>
+                        <input id="populacao" name="populacao" type="number" min="5" value="5" placeholder="Digite a quantidade de pessoas" class="form-control" required>
+
+                    </div>
+
+                    <div class="form-group col-2"><!-- Taxa de transmissão -->
+
+                        <label for="taxa">Taxa de transmissão</label>
+                        <input id="taxa" name="taxa" type="number" min="1" max="100" value="20" placeholder="Digite a taxa de transmissão" class="form-control" required>
+
+                    </div>
+
+                    <div class="form-group col-2"><!-- N° de infectados -->
+
+                        <label for="infectados">N° de infectados</label>
+                        <input id="infectados" name="infectados" type="number" min="1" max="10" value="1" placeholder="Digite a taxa de transmissão" class="form-control" required>
+
+                    </div>
+
+                    <div class="form-group col-2 align-self-end"><!-- Gerar -->
+
+                        <input id="btnGerar" type="submit" value="Gerar" class="btn btn-primary">
+
+                    </div>
+            
+                </form>
+        
+            </div>
+
+            <div class="jumbotron div-matriz">
+
+                <ul class="list-group list-group-horizontal-xl">
+                    <li class="list-group-item">
+                        <i class="fa fa-user"></i>
+                        Sem contato
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-head-side-mask"></i>
+                        Curado
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-head-side-cough"></i>
+                        Contaminado
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-skull-crossbones"></i>
+                        Morto
+                    </li>
+                    <li class="list-group-item">
+                        <span class="home">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        Em casa
+                    </li>
+                  </ul>
+
+                <table id="matriz" class="table table-borderless"></table>
+
+                <div class="row justify-content-md-center">
+
+                    <h3 class="contagem"></h3>
+
+                </div>
+
+                <div class="botoes row">
+
+                    <button type="button" class="btnProximo"   id="btnProximo"></button>
+                    <button type="button" class="btnFinalizar" id="btnFinalizar"></button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"                       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        <script src="js/Pessoa.model.js"></script>
+        <script src="js/all.min.js"></script>
+    </body>
+</html>
