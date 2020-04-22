@@ -5,7 +5,7 @@
 
 Projeto referente a resolução da atividade proposta pelo professor [Dirceu Semighini Filho](https://www.blogger.com/profile/06563099677916258865 "author profile") para a disciplina de Sistemas Distribuídos.
 
-[Link para testar o Projeto]([https://douglasaugustojunior.github.io/SimuladorContagioCoronaVirusJS/])
+[Link para testar o Projeto](https://douglasaugustojunior.github.io/SimuladorContagioCoronaVirusJS/)
 
 <img src="https://raw.githubusercontent.com/DouglasAugustoJunior/SimuladorContagioCoronaVirusJS/master/img/projeto.png" alt="Corona Vírus">
 
